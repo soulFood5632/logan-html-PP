@@ -1,0 +1,189 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <meta name="description" content="">
+
+  <meta property="og:title" content="">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+
+  <link rel="icon" href="/favicon.ico" sizes="any">
+  <link rel="icon" href="/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="icon.png">
+
+  <link rel="manifest" href="site.webmanifest">
+  <meta name="theme-color" content="#fafafa">
+</head>
+
+<body class="site">
+  <div class="topnav">
+    <div class="button-housing">
+      <a class="active" onclick="setActive(this, 'home')"> Home </a>
+    </div>
+    <div class="button-housing">
+      <a onclick="setActive(this, 'resume')"> Resume</a>
+    </div>
+    <div class="button-housing">
+      <a onclick="setActive(this, 'projects')"> Projects</a>
+    </div>
+    <div class="button-housing">
+      <a onclick="setActive(this, 'contact')"> Contact </a>
+    </div>
+  </div>
+
+  <div class="user-sections">
+    <div id="home" class="active home scrollable-container">
+      <div class="home-text vertical-stack">
+        <div class="vertical-stack">
+          <h1> Logan Underwood </h1>
+          <p> Engineering Physics UBC </p>
+          <div class="social-link-bar">
+            <a href="https://github.com/soulFood5632" class="social-link"> <i class="fa fa-github"> </i></a>
+            <a href="https://www.linkedin.com/in/logan-underwood-ubc-engphys/" class="social-link"> <i class="fa fa-linkedin-square"> </i></a>
+          </div>
+        </div>
+
+        <div class="more-arrow" style="align-content: space-between">
+          <i class="fa fa-arrow-down" aria-hidden="true"></i>
+        </div>
+
+      </div>
+
+
+      <div class="container about-me">
+
+          <div class="vertical-stack">
+            <h2> About Me</h2>
+            <div class="horizontal-stack" style="text-align: left">
+              <p>
+                Hello, my name is Logan Underwood, and I am an <a href="https://www.engphys.ubc.ca"> engineering physics</a> student at <a href="https://www.ubc.ca"> UBC.</a>
+
+              </p>
+              <p> Hello world</p>
+            </div>
+
+          </div>
+
+      </div>
+
+      <div style="padding: 100px">
+
+      </div>
+
+    </div>
+
+    <div id="resume" class="non-active resume">
+      <div class="scrollable-container">
+        <div class="work-experience" >
+          <h2> Work Experience </h2>
+          <div class="work container">
+
+
+                <div class="vertical-stack" style="text-align: left">
+
+                  <div class="title"> Data and Systems Intern</div>
+
+                  <div class="subtitle"> <a href="https://www.stantec.com/en"> Stantec Inc </a></div>
+                  <div class="subtitle"> Vancouver, BC</div>
+                </div>
+
+              <ul>
+                <li>
+                  Designed, built, and tested iOS application to assist rail operators in day-to-day activities for the TransLink Yard Control System.
+                </li>
+                <li>
+                  Completed infrastructure to interface with communication module (E-logIXS) to receive and send messages to the rail infastructure.
+                </li>
+                <li>
+                  Developed the user interface and added features to satisfy the requirements provided by TransLink.
+                </li>
+              </ul>
+
+          </div>
+
+          <h2> Education </h2>
+          <div class="work container">
+
+
+            <div class="vertical-stack" style="text-align: left">
+
+              <div class="title"> Engineering Physics </div>
+
+              <div class="subtitle"> <a href="https://www.stantec.com/en"> UBC </a></div>
+              <div class="subtitle"> Vancouver, BC</div>
+            </div>
+
+            <p> Engineering Physics is a multidisciplinary program which emphasizes a diverse engineering skill-set involving</p>
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <div id="projects" class="projects non-active">
+      <div class="scrollable-container">
+        <div class="horizontal-stack active">
+          <div id="ML"class="project container">
+            <div class="vertical-stack">
+              <h1> ENPH Machine Learning Competition </h1>
+              <p> lorem ipsum </p>
+              <div class="project-button" onclick="view_pop_up('ML')"> More Detail <i class="fa fa-info-circle"></i></div>
+              <div id="B_ML" class="non-active">
+                <p> lorem ipsum</p>
+
+              </div>
+            </div>
+
+          </div>
+
+          <div id="ROBOT" class="project container active">
+            <div class="vertical-stack">
+              <h1> ENPH Robotics Competition </h1>
+              <p> lorem ipsum </p>
+              <div class="project-button" onclick="view_pop_up('ROBOT')"> More Detail <i class="fa fa-info-circle"></i></div>
+              <div id="B_ROBOT" class="non-active">
+                <p> lorem ipsum</p>
+
+              </div>
+            </div>
+
+          </div>
+
+          <div id="APP" class="project container active">
+            <div class="vertical-stack">
+              <h1> 40 Yards Left iOS Application </h1>
+              <p> lorem ipsum </p>
+              <div class="project-button" onclick="view_pop_up('APP')"> More Detail <i class="fa fa-info-circle"></i></div>
+              <div id="B_APP" class="non-active">
+                <p> lorem ipsum</p>
+
+              </div>
+            </div>
+
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div id="contact" class="non-active contact">
+      <h2> Contact </h2>
+    </div>
+  </div>
+
+  <script src="js/app.js"></script>
+
+
+
+</body>
+
+</html>

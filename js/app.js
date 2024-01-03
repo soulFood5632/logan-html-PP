@@ -1,9 +1,14 @@
 function setActive(element, newSection) {
   var links = document.getElementsByClassName("topnav")[0].getElementsByTagName("a")
+  console.log(newSection)
   for (var i = 0; i < links.length; i++) {
-    console.log(links)
+
     links[i].classList.remove("active")
   }
+
+
+
+  // document.getElementById("user-sections").style.color =
 
   element.classList.add("active")
 
@@ -19,34 +24,51 @@ function setActive(element, newSection) {
   document.getElementById(newSection).classList.remove("non-active")
   document.getElementById(newSection).classList.add("active")
 
-
-
 }
 
-ids = ["ML", "main", "ROBOT", "APP"]
 
-function view_pop_up(elementName) {
-  console.log(elementName)
-  for (var i = 0; i < ids.length; i++) {
-    if (elementName === ids[i]) {
-      document.getElementById("B_" + elementName).classList.remove("non-active")
-      document.getElementById("B_" + elementName).classList.add("active")
-    } else {
-      document.getElementById(ids[i]).classList.remove("active")
-      document.getElementById(ids[i]).classList.add("non-active")
-    }
-  }
+
+ids = ["ML", "ROBOT", "APP"]
+
+
+
+function downloadPDF(url, name) {
+  // Replace 'your_file_url' with the actual URL of the file you want to download
+
+
+  // Create a hidden link element
+  var link = document.createElement('a');
+  link.href = url;
+
+  // Set the download attribute with the desired file name
+  link.download = name;
+
+  // Append the link to the document
+  document.body.appendChild(link);
+
+  // Trigger a click event on the link to start the download
+  link.click();
+
+  // Remove the link from the document after the download starts
+  document.body.removeChild(link);
 }
 
-function removePopUp(elementName) {
+function redirectToAnotherWebsite(url) {
+  // Use window.location.href to redirect to the specified URL
+  window.location.href = url;
+}
+
+function makeFullScreen(elementName) {
+
   for (var i = 0; i < ids.length; i++) {
     if (elementName === ids[i]) {
-      document.getElementById("B_" + elementName).classList.add("non-active")
-      document.getElementById("B_" + elementName).classList.remove("active")
+      document.getElementById(ids[i]).classList.add('active');
+      document.getElementById(ids[i]).classList.remove('non-active');
     } else {
-      document.getElementById(ids[i]).classList.add("active")
-      document.getElementById(ids[i]).classList.remove("non-active")
+      document.getElementById(ids[i]).classList.remove('active');
+      document.getElementById(ids[i]).classList.add('non-active');
     }
   }
+
 
 }

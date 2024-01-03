@@ -62,11 +62,27 @@
           <div class="vertical-stack">
             <h2> About Me</h2>
             <div class="horizontal-stack" style="text-align: left">
-              <p>
-                Hello, my name is Logan Underwood, and I am an <a href="https://www.engphys.ubc.ca"> engineering physics</a> student at <a href="https://www.ubc.ca"> UBC.</a>
+              <div class="vertical-stack">
+                <p>
+                  Hello, my name is Logan Underwood and I am an
+                   <a href="https://www.engphys.ubc.ca"> engineering physics</a> student at <a href="https://www.ubc.ca"> UBC</a> with a passion for
+                  learning and creating. I have prioritized the development of broad skillet through my studies and life decisions.
+                  This idea is reflected in my active lifestyle which includes a variety of sports and other activities like hockey, golf, and hiking.
+                  My school and work and life related interests act to compliment my problem-solving building a well-rounded engineer and human.
+                </p>
 
-              </p>
-              <p> Hello world</p>
+                <p>
+                  In this website you can explore the basics on what I have accomplished. The resume tab will discuss some of my formal
+                  experience. In the project's tab you can see some of the work I am most proud of. Ultimately, this website represents me
+                  at such a young point in my career, as the years pass new and exciting more exciting things will be added!
+                </p>
+
+              </div>
+
+              <img src="Logan%20Underwood_profile.png" alt="Profile Photo" style="max-width: 20vw; border: white 10px">
+
+
+
             </div>
 
           </div>
@@ -81,29 +97,107 @@
 
     <div id="resume" class="non-active resume">
       <div class="scrollable-container">
-        <div class="work-experience" >
+        <div class="vertical-stack">
+
+            <div class="download" onclick="downloadPDF('Tech_Resume-2 (1).pdf', 'Logan_Underwood.pdf')">
+
+              <h4> <i class="fa fa-cloud-download" > </i> Download Full Resume </h4>
+
+            </div>
+
+          <h2> Skills </h2>
+          <div class="skills">
+            <div class="container">
+              <div class="vertical-stack">
+                <h4> Languages </h4>
+                <ul>
+                  <li> Java </li>
+                  <li> Python </li>
+                  <li> JavaScript/TypeScript </li>
+                  <li> HTML, CSS </li>
+                  <li> Swift </li>
+                  <li> C/C++ </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="container">
+              <div class="vertical-stack">
+                <h4> Developer Tools </h4>
+                <ul>
+                  <li> Git </li>
+                  <li> Command Line </li>
+                  <li> Gazebo and ROS </li>
+                  <li> Swift UI </li>
+                  <li> React </li>
+                  <li> Linux, macOS, Windows</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="container">
+              <div class="vertical-stack">
+                <h4> Electrical Engineering </h4>
+                <ul>
+                  <li> Oscilloscope </li>
+                  <li> Function Generator </li>
+                  <li> Hardware Building </li>
+                  <li> Circuit Design </li>
+                  <li> Noise Reduction </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="container">
+              <div class="vertical-stack">
+                <h4> Mechanical Engineering </h4>
+                <ul>
+                  <li> OnShape </li>
+                  <li> Laser Cutter </li>
+                  <li> 3-D Printer </li>
+                  <li> Auto CAD </li>
+
+                </ul>
+              </div>
+            </div>
+
+          </div>
+
           <h2> Work Experience </h2>
           <div class="work container">
 
-
                 <div class="vertical-stack" style="text-align: left">
-
                   <div class="title"> Data and Systems Intern</div>
-
                   <div class="subtitle"> <a href="https://www.stantec.com/en"> Stantec Inc </a></div>
                   <div class="subtitle"> Vancouver, BC</div>
                 </div>
 
+            <p>
+              My first co-op placement provided me with many challenges as I learned how to work for a large
+              consulting firm like Stantec. However, my role was focused on iOS development. My major project
+              during the co-op term was the Yard Control System application used to help train operators get a
+              state of operations. In addition to work on application for the client, I explored future work
+              related to how the iPad could be used as a control device. A list of detailed accomplishments
+              are listed below:
+            </p>
+
               <ul>
                 <li>
-                  Designed, built, and tested iOS application to assist rail operators in day-to-day activities for the TransLink Yard Control System.
+                  Built the UI testing infrastructure to verify reliability, user-friendliness, and robustness of the application.
                 </li>
                 <li>
-                  Completed infrastructure to interface with communication module (E-logIXS) to receive and send messages to the rail infastructure.
+                  Restructured and completed an interface between the iPad and a communication module following traditional design structures
                 </li>
                 <li>
-                  Developed the user interface and added features to satisfy the requirements provided by TransLink.
+                  Redesigned the user interface design, so it could be resused for future projects.
                 </li>
+                <li>
+                  Rebuilt the backend data-representation in order to leverage the benefits of object-oriented programing like inheritance and testability.
+                </li>
+                <li>
+                  Designed a backend used to save state and reload the application according to the previous state.
+                </li>
+
               </ul>
 
           </div>
@@ -120,67 +214,165 @@
               <div class="subtitle"> Vancouver, BC</div>
             </div>
 
-            <p> Engineering Physics is a multidisciplinary program which emphasizes a diverse engineering skill-set involving</p>
+            <p>
+              Engineering Physics is a multidisciplinary program which emphasizes a diverse skilled including
+              a strong understanding of physics, math, electrical, mechanical, and computer engineering. A major focus
+              of the program is a set of 4 separate project courses which challenge different aspects of your engineering skills.
+              Below are some key courses:
+
+            </p>
+            <div class="horizontal-stack">
+              <div class="course">
+                <h5> CPEN 221 - Introduction To Software Construction </h5>
+                <p> An expansive course detailing software design and testing which included hands on code development experience.</p>
+              </div>
+
+              <div class="course ">
+                <h5> ENPH 253 - Introduction To Instrument Design </h5>
+
+                <p> The engineering physics summer robot competition is an intensive 6-week sprint to a fully functional autonomous robot. </p>
+
+
+              </div>
+
+              <div class="course">
+                <h5> ENPH 353 - Engineering Physics Project</h5>
+                <p>The second of ENPH project courses in which you explore machine learning and other classical tools to build an autonomous virtual robot. </p>
+              </div>
+
+              <div class="course">
+                <h5> PHYS 301 - E&M </h5>
+                <p>A classic upper level physics course involving electro and magento statics, culminating in the discussion of maxwell's equations</p>
+              </div>
+            </div>
+
+          </div>
+          <div style="padding: 100px">
 
           </div>
         </div>
+
       </div>
 
     </div>
 
     <div id="projects" class="projects non-active">
       <div class="scrollable-container">
-        <div class="horizontal-stack active">
-          <div id="ML"class="project container">
-            <div class="vertical-stack">
-              <h1> ENPH Machine Learning Competition </h1>
-              <p> lorem ipsum </p>
-              <div class="project-button" onclick="view_pop_up('ML')"> More Detail <i class="fa fa-info-circle"></i></div>
-              <div id="B_ML" class="non-active">
-                <p> lorem ipsum</p>
+        <div class="vertical-stack">
+          <div class="horizontal-stack">
+            <div id="ML"class="project container" style="width: 25vw">
+              <div class="vertical-stack">
+                <h1 style="text-align: center"> ENPH Machine Learning Competition </h1>
+
+                <p>
+                  The 16 week course is a gateway to modern machine learning techniques. Throughout the course, we explored
+                  concepts like reinforcement and supervised learning techniques. The challenge of the project was to traverse
+                  a competition map collecting clues of the murder mystery.
+                </p>
+                <h3> Critical Challenges </h3>
+                <ul>
+                  <li> OpenCV image tools </li>
+                  <li> CNN neural networks </li>
+                  <li> Building a data pipeline </li>
+                  <li> State Machine Design Pattern </li>
+                  <li> Robot Operating System and Gazebo Simulators </li>
+                </ul>
+
+
+                  <div class="more-info-link" onclick="redirectToAnotherWebsite('https://github.com/soulFood5632/ENPH-353-robotController')" style="cursor: pointer">
+                    <p> <i class="fa fa-github"></i> </p>
+                  </div>
+                  <div class="more-info-link" onclick="downloadPDF('ENPH 353 Final Report.pdf', 'ENPH_353_Final_Report.pdf')" style="cursor: pointer">
+                    <p> Download Report <i class="fa fa-cloud-download"></i></p>
+                  </div>
+
+  <!--              <img src="car_image.jpg", alt="Example Image of vision of car during travel" class="center image" style="max-width: 25vw">-->
+  <!--              <label class="center"> Starting Point on competition map</label>-->
 
               </div>
+
             </div>
 
-          </div>
+            <div id="ROBOT" class="project container" style="max-width: 25vw">
+              <div class="vertical-stack">
+                <h1 style="text-align: center"> ENPH Robotics Competition </h1>
+                <p>
+                  Our Engineering Physics robot competition was a 6-week design project which pits classmates into teams of 4
+                  to build an autonomous robot to traverse a mario style track. The project required the design and build of the robot
+                  from scratch from chassis to drive system. The problem was designed to be very open-ended which led to many unique solutions
+                  which had varying degrees of a success.
+                </p>
+                <h3> Critical Challenges </h3>
+                <ul>
+                  <li> Chassis Design </li>
+                  <li> Circuit noise reduction and ground isolation</li>
+                  <li> PID controllers </li>
+                  <li> Sensor Reliability </li>
+                  <li> System Integration </li>
+                  <li> State Machine Software Design</li>
 
-          <div id="ROBOT" class="project container active">
-            <div class="vertical-stack">
-              <h1> ENPH Robotics Competition </h1>
-              <p> lorem ipsum </p>
-              <div class="project-button" onclick="view_pop_up('ROBOT')"> More Detail <i class="fa fa-info-circle"></i></div>
-              <div id="B_ROBOT" class="non-active">
-                <p> lorem ipsum</p>
+                </ul>
+
+                <div class="more-info-link" onclick="redirectToAnotherWebsite('https://github.com/soulFood5632/ENPH-353-robotController')" style="cursor: pointer">
+                  <p> <i class="fa fa-github"></i> </p>
+                </div>
+
 
               </div>
+
             </div>
 
-          </div>
+            <div id="APP" class="project container" style="width: 25vw">
+              <div class="vertical-stack">
+                <h1 style="text-align: center"> 40 Yards Left iOS Application </h1>
+                <p>
+                  During my youth, I played competitive golf and I often thought about how I could improve my stat
+                  tracking techniques. The more I learned about iOS development, the more I realized that is the perfect avenue
+                  to build a stat tracking application for me to use to track stats. The application utilizes the strokes gained model
+                  to analyze performance of a golfer complete with a variety of more traditional data analysis tools.
+                </p>
 
-          <div id="APP" class="project container active">
-            <div class="vertical-stack">
-              <h1> 40 Yards Left iOS Application </h1>
-              <p> lorem ipsum </p>
-              <div class="project-button" onclick="view_pop_up('APP')"> More Detail <i class="fa fa-info-circle"></i></div>
-              <div id="B_APP" class="non-active">
-                <p> lorem ipsum</p>
+                <h3> Critical Challenges </h3>
+                <ul>
+                  <li> iOS Design Patterns </li>
+                  <li> Saving User Data using a backend </li>
+                  <li> Software Testing </li>
+                  <li> SwiftUI </li>
+                  <li> Firebase Backend </li>
+                  <li> TestFlight </li>
+                  <li> User Interface Design </li>
+                </ul>
+
+                <div class="more-info-link" onclick="redirectToAnotherWebsite('https://github.com/soulFood5632/ENPH-353-robotController')" style="cursor: pointer">
+                  <p> <i class="fa fa-github"></i> </p>
+                </div>
+
 
               </div>
+
+
             </div>
-
-
           </div>
+
+          <div style="padding: 100px"> </div>
         </div>
 
       </div>
     </div>
 
     <div id="contact" class="non-active contact">
-      <h2> Contact </h2>
+      <div class="contact-me vertical-stack">
+        <label for="editableInput"> Contact Me: </label>
+        <input type="text" id="editableInput" placeholder="Input Text Here...">
+
+
+      </div>
+
     </div>
   </div>
 
   <script src="js/app.js"></script>
+
 
 
 

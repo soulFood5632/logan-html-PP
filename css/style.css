@@ -267,12 +267,112 @@ textarea {
   display: flex;
   flex-direction: row;
   overflow: hidden;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-content: center;
+}
+
+.projects h1 {
+  margin-bottom: 5px;
+}
+
+ul {
+  margin-left: 0;
 }
 
 .button-housing {
   padding: 2px;
+}
+
+.download {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  cursor: pointer;
+  padding: 10px 45px;
+  margin: 15px 15vw;
+  border-radius: 15px;
+
+  color: #f2f2f2;
+  background-color: #328d3d;
+  border: none;
+}
+
+.image {
+  border: 14px white;
+}
+
+.more-info-link {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background-color: #1a5020;
+  margin: 4px;
+  padding: 5px;
+  font-size: 20px;
+  line-height: 0.9;
+
+  box-shadow: rgba(0, 0, 0, 0.85);
+
+  text-decoration: none;
+
+  transition: background-color 0.6s, color 0.6s;
+}
+
+.more-info-link p {
+  margin: 2px;
+}
+
+.more-info-link a {
+  text-decoration: none;
+  width: available;
+
+}
+
+.more-info-link a, a:visited, a:active {
+  color: white;
+}
+
+
+
+.more-info-link:hover {
+  background-color: white;
+  color: black;
+}
+
+
+.project label {
+  font-size: 14px;
+  margin-top: 5px;
+  padding: 4px;
+
+
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+.download:hover {
+  box-shadow: none;
+  background-color: white;
+  color: black;
+
+
+  transition: background-color 0.6s, color 0.6s;
+}
+
+.download h4 {
+  float: left;
+
+  text-align: center;
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bold;
+  border-radius: 5px;
+
 }
 
 .topnav a {
@@ -281,12 +381,15 @@ textarea {
   text-align: center;
   padding: 14px 25px;
   text-decoration: none;
-  font-size: 16px;
-  border-radius: 3px;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 5px;
 
   transition: background-color 0.2s, color 0.2s;
 
 }
+
+
 
 /* Change the color of links on hover */
 .topnav a:hover {
@@ -297,7 +400,7 @@ textarea {
 
 /* Add a color to the active/current link */
 .topnav a.active {
-  background-color: firebrick;
+  background-color: #328D3DFF;
   color: white;
 
 }
@@ -305,7 +408,7 @@ textarea {
 .site {
   font-family: "Avenir Next";
 
-  background-image: linear-gradient(rgba(87, 0, 0, 0.2), rgba(87, 0, 0, 0.45)), url("icon.png");
+  background-image: linear-gradient(rgba(0, 87, 0, 0.2), rgba(0, 87, 0, 0.6)), url("icon.png");
 
   background-position: center;
   background-size: cover;
@@ -333,6 +436,8 @@ textarea {
 
 }
 
+
+
 .home-text {
   display: flex;
   flex-direction: column;
@@ -345,12 +450,23 @@ textarea {
 
 }
 
-.work horizontal-stack {
+
+
+.skills {
+  display: flex;
   justify-content: space-around;
+  flex-direction: row;
+  color: white;
+}
+
+.skills h4 {
+  text-align: center;
 }
 
 .about-me {
   padding: 10px;
+
+  color: white;
 }
 
 .home-text h1 {
@@ -368,13 +484,32 @@ textarea {
   padding: 15px 10px;
 }
 
+.work {
+  color: white;
+}
+
+.project {
+  color: white;
+}
+
+.project .vertical-stack {
+  justify-content: space-between;
+  height: available;
+}
+
+.projects h3 {
+  margin: 3px;
+
+}
+
 .social-link {
-  background-color: rgba(0, 0, 0, 1);
+  background-color: #328D3DFF;
   text-align: center;
   align-content: center;
   padding: 10px 15px;
   font-size: 30px;
-  transition: background-color 0.2s, color 0.2s;
+
+  transition: background-color 0.6s, color 0.6s;
 
 }
 
@@ -394,7 +529,7 @@ textarea {
 }
 
 .social-link:hover {
-  background-color: #ddd;
+  background-color: white;
   color: black;
 
 }
@@ -407,6 +542,8 @@ textarea {
 }
 
 .scrollable-container {
+  display: block;
+  max-height: 100vh;
 
   padding: 5px 15px; /* Add padding to the container */
   overflow-y: auto; /* Enable vertical scrolling */
@@ -431,27 +568,50 @@ textarea {
 }
 
 .projects .container {
-  background-color: #b64a4a;
+  background-color: #328D3DFF;
   padding: 20px;
   margin: 10px;
-  max-width: 25%;
+
 }
-
-
 
 .container {
   box-shadow: 10px 10px 0 rgba(0, 0, 0, 0.85);
+  transition: background-position 0.2s;
+
 }
+
+
+
+
 
 .home .container {
 
-  background-color: #b64a4a;
+  background-color: #328D3DFF;
   padding: 20px;
 
 }
 
+.course {
+  margin: 10px;
+  background-color: rgba(128, 128, 128, 0.5);
+  padding: 20px;
+  border-radius: 10px;
+
+  flex-direction: column;
+  justify-content: center;
+  display: flex;
+}
+
+.course h5 {
+  margin: 3px 0px;
+}
+
+.course p {
+  font-size: 14px;
+}
+
 .resume .container {
-  background-color: #b64a4a;
+  background-color: #328D3DFF;
   padding: 20px;
   margin: 25px 10px;
 }
@@ -475,14 +635,11 @@ textarea {
   color: white;
 }
 
-
 .home .horizontal-stack {
   padding: 3px 10px;
 }
 
-.project-button {
 
-}
 
 @keyframes bounce {
   0%, 20%, 50%, 80%, 100% {
@@ -507,16 +664,14 @@ textarea {
   margin-bottom: 3px;
 }
 
-.work p {
-  line-height: 0.9;
-}
-
-
-
 
 
 .active {
   display: block;
+}
+
+.projects .active {
+  display: flex;
 }
 
 .non-active {

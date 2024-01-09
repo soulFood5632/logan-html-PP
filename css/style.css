@@ -324,6 +324,7 @@ ul {
 
 .more-info-link a {
   text-decoration: none;
+  color: white;
   width: available;
 
 }
@@ -406,7 +407,7 @@ ul {
 }
 
 .site {
-  font-family: "Avenir Next";
+  font-family: "Avenir Next", serif;
 
   background-image: linear-gradient(rgba(0, 87, 0, 0.2), rgba(0, 87, 0, 0.6)), url("icon.png");
 
@@ -581,9 +582,6 @@ ul {
 }
 
 
-
-
-
 .home .container {
 
   background-color: #328D3DFF;
@@ -603,7 +601,7 @@ ul {
 }
 
 .course h5 {
-  margin: 3px 0px;
+  margin: 3px 0;
 }
 
 .course p {
